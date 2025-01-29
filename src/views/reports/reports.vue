@@ -177,7 +177,7 @@ export default {
             this.modalVisible = false;
         },
 
-        listenForNewReports() {
+        listenChReports() {
             window.Echo.channel("reports").listen("ReportGeneratedEvent", (data) => {
                 console.log("Nuevo reporte generado:", data.report);
                 this.reportes.unshift(data.report);
@@ -188,7 +188,7 @@ export default {
     },
     mounted() {
         this.getReports();
-        this.listenForNewReports();
+        this.listenChReports();
     },
 };
 </script>
