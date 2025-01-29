@@ -1,29 +1,37 @@
-# ReportesTkFront
+# 📚 Reportes App Front
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto es el frontend de una aplicación web desarrollada utilizando **Vue.js**.  Se conecta con el backend en **Laravel** y soporta **autenticación con tokens** y **actualización en tiempo real con WebSockets**.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 **Tecnologías utilizadas**
+Asegúrate de tener instalados los siguientes componentes en tu máquina:
 
-## Customize configuration
+- **Vue.jsr**: Framework de desarrollo frontend.
+- **Sass**: Para estilizar la interfaz de usuario.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🛠️ **Instalación**
 
+Clonar el Repositorio
+```sh
+git clone https://github.com/hazielace/app-tiendalibro-front.git
+cd ReportesTkFront
+```
+
+## 🚦 Ejecución del proyecto
+Instalar dependencias
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+Configurar el entorno, editar el archivo:
+```sh
+.env
+```
+Iniciar proyecto front
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
