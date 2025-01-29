@@ -28,10 +28,9 @@ export default {
     };
   },
   methods: {
-    async login() {
+    login() {
       this.authError = null;
-      try {
-        const res = await tryToLogInStore(this.email, this.password);
+      tryToLogInStore(this.email, this.password).then((res) => {
         if (!res.data.status) {
           this.authError = res.data.data.errors ? res.data.data.errors : "";
           return;
@@ -41,10 +40,10 @@ export default {
           localStorage.setItem("data", JSON.stringify(res.data.data));
           this.$router.push('/reports');
         }
-      } catch (error) {
+      }).catch((error) => {
         this.authError = "Error desconocido del servidor";
         console.error(error);
-      }
+      });
     }
   }
 };
