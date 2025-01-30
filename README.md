@@ -39,7 +39,7 @@ npm run dev
 Los usuarios se generan automáticamente al completar la instalación del backend, disponible en el siguiente repositorio:  
 👉 **[ReportsTkBack](https://github.com/hazielace/ReportsTkBack)**  
 
-Esto creará múltiples usuarios con correos y contraseñas aleatorias.  
+Esto creará múltiples usuarios con nombres, fechas de nacimiento, correos y contraseñas aleatorias.  
 Para obtener las credenciales de uno de estos usuarios, puedes ejecutar la siguiente consulta en la base de datos:  
 
 ```sql
