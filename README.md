@@ -40,7 +40,7 @@ Los usuarios se generan automáticamente al completar la instalación del backen
 👉 **[ReportsTkBack](https://github.com/hazielace/ReportsTkBack)**  
 
 Esto creará múltiples usuarios con nombres, fechas de nacimiento, correos y contraseñas aleatorias.  
-Para obtener las credenciales de uno de estos usuarios, puedes ejecutar la siguiente consulta en la base de datos:  
+Para obtener las credenciales de uno de los usuarios, se puede ejecutar la siguiente consulta en la base de datos:  
 
 ```sql
 SELECT email, password_show FROM users LIMIT 5;
